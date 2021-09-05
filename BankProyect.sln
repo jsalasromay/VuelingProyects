@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiVector", "TaxiVector\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{765FA456-83C7-4865-AD50-B28E549BAFF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{0522605B-D5BF-467A-A324-8876FE9BA27D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0522605B-D5BF-467A-A324-8876FE9BA27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0522605B-D5BF-467A-A324-8876FE9BA27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0522605B-D5BF-467A-A324-8876FE9BA27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0522605B-D5BF-467A-A324-8876FE9BA27D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

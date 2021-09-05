@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProyect", "BankProyect\BankProyect.csproj", "{73165DA2-FA05-45BF-9A76-4CE2C7853181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiVector", "TaxiVector\TaxiVector.csproj", "{A1C8DFD3-F04C-4833-9F34-6CA3E40B99F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{765FA456-83C7-4865-AD50-B28E549BAFF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73165DA2-FA05-45BF-9A76-4CE2C7853181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73165DA2-FA05-45BF-9A76-4CE2C7853181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73165DA2-FA05-45BF-9A76-4CE2C7853181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73165DA2-FA05-45BF-9A76-4CE2C7853181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1C8DFD3-F04C-4833-9F34-6CA3E40B99F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C8DFD3-F04C-4833-9F34-6CA3E40B99F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C8DFD3-F04C-4833-9F34-6CA3E40B99F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C8DFD3-F04C-4833-9F34-6CA3E40B99F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765FA456-83C7-4865-AD50-B28E549BAFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BCC52D6-E20E-4AA1-A4B4-654D542603C6}
+	EndGlobalSection
+EndGlobal

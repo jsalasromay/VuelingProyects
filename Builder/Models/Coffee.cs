@@ -24,5 +24,12 @@ namespace Builder
 			string sugar = string.Join(", ", Sugar.Select(e => e.ToString()).ToArray());
 			return $"Coffee: {Sort}. {milk} {sugar}";
 		}
+		public Coffee() { Milk = new List<Milk>(); Sugar = new List<Sugar>(); }
+		public Coffee SetBlackCoffee() { Sort = "Black"; return this; }
+		public Coffee SetCubanoCoffee() { Sort = "Cubano"; Sugar.Add(new Sugar("Brown")); return this; }
+		public Coffee SetAntoccinoCoffee() { Sort = "Americano"; Milk.Add(new Milk(0.5)); return this; }
+		public Coffee WithMilk(double fat) { Milk.Add(new Milk(fat)); return this; }
+		public Coffee WithSugar(string sort) { Sugar.Add(new Sugar(sort)); return this; }
+		public Coffee Build() { return new Coffee(Sort, Milk, Sugar); }
 	}
 }

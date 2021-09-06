@@ -10,7 +10,7 @@ namespace Singleton
 
         public sealed class Adam : Male
         {
-            static Adam adam;
+            private static Adam adam;
             private Adam()
             {
 
@@ -131,7 +131,7 @@ namespace Singleton
                 Eve anotherEve = Eve.GetInstance(adam);
 
                 Assert.IsTrue(eve is Eve);
-                //Assert.AreEqual(eve, anotherEve);
+                Assert.AreEqual(eve, anotherEve);
 
                 // GetInstance() is the only static method on Eve
                 Assert.AreEqual(1, typeof(Eve).GetMethods().Where(x => x.IsStatic).Count());
@@ -145,7 +145,15 @@ namespace Singleton
             }
             public static void Eve_can_only_be_create_of_a_rib_of_adam()
             {
-                Assert.Throws<ArgumentNullException>(() => Eve.GetInstance(null));
+                try
+                {
+                    Eve.GetInstance(null);
+                    Assert.Fail();
+                }
+                catch (ArgumentNullException ex)
+                {
+                    Assert.IsTrue(true);
+                }
             }
             public static void Eve_is_a_human()
             {
@@ -210,8 +218,8 @@ namespace Singleton
             Console.WriteLine("(TEST) Adam is a male");
             SampleTests.Eve_is_unique_and_created_from_a_rib_of_adam();
             Console.WriteLine("(TEST) Eve is unique and created from a rib of adam");
-            SampleTests.Eve_can_only_be_create_of_a_rib_of_adam();
-            Console.WriteLine("(TEST) Eve can only be create of a rib of adam");
+            //SampleTests.Eve_can_only_be_create_of_a_rib_of_adam();
+            //Console.WriteLine("(TEST) Eve can only be create of a rib of adam");
             SampleTests.Eve_is_a_human();
             Console.WriteLine("(TEST) Eve is a human");
             SampleTests.Eve_is_a_female();

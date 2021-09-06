@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BankProyect.Models;
+using BankProyect.Services;
+using System;
 
 namespace BankProyect
 {
@@ -6,7 +8,10 @@ namespace BankProyect
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            UserService userService = new UserService();
+            BankService bankService = new BankService();
+            Client client = userService.Register("jesus@email.com", "1234");
+            BankAccount bankAccount = bankService.Create(client, "ES36547", 2138.15m);
         }
     }
 }

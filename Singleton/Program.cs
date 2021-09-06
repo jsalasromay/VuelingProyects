@@ -8,7 +8,7 @@ namespace Singleton
     class Program
     {
 
-        sealed public class Adam : Male
+        public sealed class Adam : Male
         {
             static Adam adam;
             private Adam()
@@ -28,16 +28,16 @@ namespace Singleton
             }
 
         }
-        sealed public class Eve : Female
+        public sealed class Eve : Female
         {
             private static Eve eve;
             private Eve()
             {
 
             }
-            public static Eve GetInstance(Adam adam2)
+            public static Eve GetInstance(Adam adam)
             {
-                if (adam2 != null)
+                if (adam != null && eve == null)
                 {
                     eve = new Eve
                     {
@@ -210,8 +210,8 @@ namespace Singleton
             Console.WriteLine("(TEST) Adam is a male");
             SampleTests.Eve_is_unique_and_created_from_a_rib_of_adam();
             Console.WriteLine("(TEST) Eve is unique and created from a rib of adam");
-            //SampleTests.Eve_can_only_be_create_of_a_rib_of_adam();
-            //Console.WriteLine("(TEST) Eve can only be create of a rib of adam");
+            SampleTests.Eve_can_only_be_create_of_a_rib_of_adam();
+            Console.WriteLine("(TEST) Eve can only be create of a rib of adam");
             SampleTests.Eve_is_a_human();
             Console.WriteLine("(TEST) Eve is a human");
             SampleTests.Eve_is_a_female();

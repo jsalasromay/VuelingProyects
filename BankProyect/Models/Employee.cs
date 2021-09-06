@@ -6,6 +6,6 @@ namespace BankProyect.Models
 {
     public class Employee : Client
     {
-        private Employee() : base(null, null) { }
+        private Employee() : base(null, null, null) { }
     }
 }

@@ -19,8 +19,8 @@ namespace BankProyect.Services
             SmsService smsService = new SmsService();
             bankAccount.Balance -= balance;
             destinationBankAccount.Balance += balance;
-            Console.WriteLine(smsService.Send(bankAccount.client.Phone, $"Envio de saldo con exito, su nuevo saldo es {bankAccount.Balance}"));
-            Console.WriteLine(smsService.Send(destinationBankAccount.client.Phone, $"Envio de saldo con exito, su nuevo saldo es {destinationBankAccount.Balance}"));
+            Console.WriteLine(smsService.Send(bankAccount.client.Phone, $"Envio de saldo con exito, su nuevo saldo {bankAccount.client.Email} es {bankAccount.Balance}"));
+            Console.WriteLine(smsService.Send(destinationBankAccount.client.Phone, $"Envio de saldo con exito, su nuevo saldo {destinationBankAccount.client.Email} es {destinationBankAccount.Balance}"));
         }
     }
 }

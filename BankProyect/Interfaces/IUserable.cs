@@ -7,6 +7,6 @@ namespace BankProyect.Interfaces
 {
     interface IUserable
     {
-        public Client Register(String email, String password);
+        public Client Register(String email, String password, String phone);
     }
 }

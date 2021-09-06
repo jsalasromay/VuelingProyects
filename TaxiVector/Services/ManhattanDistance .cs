@@ -14,7 +14,7 @@ namespace DeHaro.CabbieGeometry.Logic
             _p1 = p1;
             _p2 = p2;
         }
-        private int GetPrivatePropety(Point p, string PropName)
+        public int GetPrivatePropety(Point p, string PropName)
         {
             Type typ = typeof(Point);
             FieldInfo type = typ.GetField(PropName, BindingFlags.NonPublic | BindingFlags.Instance);

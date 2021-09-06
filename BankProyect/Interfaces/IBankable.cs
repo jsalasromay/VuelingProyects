@@ -8,5 +8,6 @@ namespace BankProyect.Interfaces
     interface IBankable
     {
         public BankAccount Create(Client client, String iban, decimal Balance);
+        public void SendBalance(decimal Balance, BankAccount destinationBankAccount, BankAccount bankAccount);
     }
 }

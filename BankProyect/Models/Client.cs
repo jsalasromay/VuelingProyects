@@ -6,6 +6,7 @@ namespace BankProyect.Models
 {
     public class Client : User
     {
+        public String Phone { get; set; }
         public Client(String email, String password) : base(email, password) { }
     }
 }

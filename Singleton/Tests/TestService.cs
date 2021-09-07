@@ -27,5 +27,9 @@ namespace Singleton.Tests
             Assert.IsFalse(typeof(Adam).GetConstructors(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)
               .Any(x => x.IsPublic || x.IsAssembly));
         }
+        public static void Adam_is_unique_and_cannot_be_overriden()
+        {
+            Assert.IsTrue(typeof(Adam).IsSealed);
+        }
     }
 }

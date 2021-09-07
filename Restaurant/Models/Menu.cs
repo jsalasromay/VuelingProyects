@@ -22,10 +22,10 @@ namespace Restaurant.Models
         }
         public override string ToString()
         {
-            string starter = string.Join(", with ", Starter.Select(e => e.ToString()).ToArray());
-            string mainCourse = string.Join(", with ", MainCourse.Select(e => e.ToString()).ToArray());
-            string dessert = string.Join(", with ", Dessert.Select(e => e.ToString()).ToArray());
-            return $"Menu: {Type}: {starter} {mainCourse} {dessert}";
+            string starter = string.Join(" with ", Starter.Select(e => e.ToString()).ToArray());
+            string mainCourse = string.Join(" with ", MainCourse.Select(e => e.ToString()).ToArray());
+            string dessert = string.Join(" with ", Dessert.Select(e => e.ToString()).ToArray());
+            return $"Menu: {Type}. Starter: {starter}. Main course: {mainCourse}. Dessert: {dessert}.";
         }
         public Menu() { Starter = new List<Starter>(); MainCourse = new List<MainCourse>(); Dessert = new List<Dessert>(); }
         public Menu SetChildrenMenu() { Type = "Children"; Price = 6.5m; return this; }

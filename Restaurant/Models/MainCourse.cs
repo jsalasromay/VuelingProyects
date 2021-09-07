@@ -13,7 +13,7 @@ namespace Restaurant.Models
 		}
 		public override string ToString()
 		{
-			return $"MainCourse: {Ingredient}";
+			return $"{Ingredient}";
 		}
 	}
 }

@@ -10,6 +10,7 @@ namespace Restaurant.Services
     {
         public decimal CalculatePrice(Table table)
         {
+            CashRegister cashRegisterUnique = CashRegister.GetInstance();
             decimal total = 0;
             foreach (var menu in table.Menus)
                 total += menu.Price;

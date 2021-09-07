@@ -9,7 +9,6 @@ namespace Restaurant
     {
         static void Main(string[] args)
         {
-            CashRegister cashRegisterUnique = CashRegister.GetInstance();
             CashRegisterService cashService = new CashRegisterService();
 
             var menu1 = new Menu().SetChildrenMenu().WithStarter("Spaguetti", 0).WithMainCourse("Burger", 0).WithDessert("Custard", 0).Build();
